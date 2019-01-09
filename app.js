@@ -12,6 +12,7 @@ const titleOptions = {
   demand: true,
   alias: 't'
 };
+
 const argv = yargs
   .command('add', 'Add a new note', {
     title: titleOptions,
@@ -30,6 +31,7 @@ const argv = yargs
   })
   .help()
   .argv;
+  
 var command = argv._[0];
 // console.log('Command: ', command);
 // console.log('Yargs: ', argv);
